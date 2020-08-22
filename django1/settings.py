@@ -27,7 +27,7 @@ SECRET_KEY = '@sn-jv_&3c25&o@36bm79vh^xra7fes_n!j5z7p9a%^!ggx0-&'
 # DEBUG = False esta em modo producao
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['django1-lgo.herokuapp.com'] # '*'
 
 
 # Application definition
