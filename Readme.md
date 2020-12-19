@@ -1,17 +1,16 @@
 # DjangoWeb1
 
-Projeto em django para buscar informações do banco de dados e exibir na web.
+Projeto em django para permitir cadastrar dados no banco sqlite e posteriormente buscar as informações para exibir na web.
 
 # Funcionalidades
 
-- [x] as informações podem ser gerenciadas pelo django-admin.
-- [x] as informações podem ser gerenciadas pelo django-admin.
-- [x] as informações podem ser gerenciadas pelo django-admin.
-- [x] as informações podem ser gerenciadas pelo django-admin.
-- [x] as informações podem ser gerenciadas pelo django-admin.
-- [x] as informações podem ser gerenciadas pelo django-admin.
+- [x] Cadastro de usuario e produto atraves da area administrativa do django.
+- [x] Rotas para navegação entre index, produto, contato.
+- [x] Pagina para informar erro no servidor (404, 500).
+- [x] Arquivos estaticos para css, js e imagem.
 
 ## Pacotes utilizados
+
 ```bash
 asgiref
 autopep8
@@ -30,7 +29,7 @@ Use o gerenciador de pacotes [pip](https://pypi.org/) para instalação, exemplo:
 pip install Django gunicorn whitenoise
 ```
 
-## Uso do models do pacote django
+## Uso do models no django
 
 ```python
 from django.db import models

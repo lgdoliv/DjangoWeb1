@@ -16,7 +16,7 @@ def index(request):
     produtos = Produto.objects.all()
 
     context = {'curso': 'Programacao Web Django Framework',
-               'outro': 'Django Ã© massa!!',
+               'outro': 'Django é massa!!',
                'produtos': produtos}
     return render(request, 'index.html', context)
 

@@ -23,15 +23,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@sn-jv_&3c25&o@36bm79vh^xra7fes_n!j5z7p9a%^!ggx0-&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True esta em modo desenvolvimento
-# DEBUG = False esta em modo producao
+# DEBUG = True  - em desenvolvimento
+# DEBUG = False - em producao
+# DEBUG = True
 DEBUG = False
 
-ALLOWED_HOSTS = ['django1-lgo.herokuapp.com'] # '*'
-
+ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['django1-lgo.herokuapp.com']
 
 # Application definition
-
+# adicionar o app "core"
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,9 +43,11 @@ INSTALLED_APPS = [
     'core',
 ]
 
+# adicionar whitenoise.middleware.WhiteNoiseMiddleware
+# para servir arquivos estaticos em producao
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', # servir arquivos estaticos em producao
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -109,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
@@ -124,4 +127,5 @@ USE_TZ = True
 STATIC_URL = '/static/' # usado durante o desenvolvimento
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # usado durante a producao
 
+# recirecionar para o index
 LOGOUT_REDIRECT_URL = 'index'
