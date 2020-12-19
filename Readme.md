@@ -1,4 +1,4 @@
-# DjangoWeb1
+# Django1
 
 Projeto em django para permitir cadastrar dados no banco sqlite e posteriormente buscar as informações para exibir na web.
 
